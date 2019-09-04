@@ -30,7 +30,7 @@ public class EmployeeController {
 	
 	public List<Employee> getEmployees(){
 		try {
-			return service.getMovies();
+			return service.getEmployees();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -21,7 +21,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		em.persist(emp);
 	}
 	@Override
-    public List<Employee> getMovies() throws Exception {
+    public List<Employee> getEmployees() throws Exception {
         Query query = em.createQuery("SELECT m FROM Employee as m");
         List<Employee> resultList = query.getResultList();
 		return resultList;
